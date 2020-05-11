@@ -228,22 +228,3 @@ class User:
                     print(row)
                     i += 1
                 print(f'Количество записей - {i}')
-
-
-
-
-# if __name__ == '__main__':
-#     user = User(TOKEN)
-#     information = user.get_info('soldatenkov121')
-#     user_id = information['response'][0]['id']
-#     # print(len(information))
-#     friends = user.get_friends(user_id)
-#     # my_groups = user.get_groups(user_id)
-#     list_well_poeple = user.get_friens_of_friends(user_id)
-#     print(list_well_poeple)
-    # common_friends = user.find_common_friends(list_well_poeple)
-    # common_groups = user.find_common_groups(list_well_poeple)
-    # sorted_list = user.sorted_people(common_friends, common_groups)
-    # # list_id = [18098504, 5061261, 8232281, 228511688, 53474230, 515998263, 497652951, 2732258, 7080060, 170748077, 179025535, 3315453, 88987002, 1876621, 406139125, 306363520, 294965239, 580804664]
-    # photos = user.top_photo(sorted_list)
-    # user.add_result_to_db(photos)
