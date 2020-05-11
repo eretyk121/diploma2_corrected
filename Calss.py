@@ -59,7 +59,7 @@ class User:
                     continue
                 else:
                     result_list.append({f'https://vk.com/id{id}': urls_list})
-            except:
+            except KeyError:
                 pass
         # with open('test.json', 'w', encoding='utf-8') as text:
         #     json.dump(result_list, text)
