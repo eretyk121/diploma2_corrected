@@ -234,21 +234,24 @@ class User:
                                  'books': one['books'].replace('"', '').split(', ')})
         for one in int_list:
             movie_counter = 0
-            for movie in one['movies']:
-                if movie in list_movies:
-                    movie_counter += 1
+            if list_movies != ['']:
+                for movie in one['movies']:
+                    if movie in list_movies:
+                        movie_counter += 1
             music_counter = 0
-            for music in one['music']:
-                if music in list_music:
-                    music_counter += 1
+            if list_music != ['']:
+                for music in one['music']:
+                    if music in list_music:
+                        music_counter += 1
             book_counter = 0
-            for book in one['books']:
-                if book in list_books:
-                    book_counter += 1
+            if list_books != ['']:
+                for book in one['books']:
+                    if book in list_books:
+                        book_counter += 1
             list_common_interests.append({'id': one['id'],
                                    'count_movies': movie_counter,
                                    'count_music': music_counter,
-                                   'count_books': book_counter})
+                                   'count_books': book_counter})            
         return list_common_interests
 
     # сортировка результатов выборки по друзьям, интересам и группам
