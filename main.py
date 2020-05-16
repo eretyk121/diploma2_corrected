@@ -1,4 +1,4 @@
-from reserv import User, TOKEN
+from Class import User, TOKEN
 from pprint import pprint
 
 def vkinder(user):
@@ -13,7 +13,7 @@ def vkinder(user):
     print(f'Количество людей с доступными фотографиями {len(photos)}')
     object.add_result_to_db(photos[:10])
     print('Данные успешно записаны')
-    object.read_from_db())
+    object.read_from_db()
 
 if __name__ == '__main__':
     vkinder('soldatenkov121')
