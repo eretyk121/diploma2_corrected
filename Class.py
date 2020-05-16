@@ -3,7 +3,6 @@ import requests
 import pandas as pd
 import psycopg2 as ps
 
-ID = 'soldatenkov121'
 TOKEN = '63bd9b357f079b30e4ea43a61b75cf79a83479878af900188b02bae5fec5177ee4d4e142b8e73d9312a34'
 
 
